@@ -52,30 +52,30 @@ FORMATDB=formatdb
 MEGABLAST=megablast
 
 #sh
-CORRECTLINE=bam.correctLineLength.sh
-ASSSTATS=~tdo/Bin/assstats.sh
-ICORN2SERIAL=/nfs/users/nfs_t/tdo/Bin/icorn2.serial.sh
-ANNOT1=~/Bin/vargene.AnnotationVARgenes.assembly.V0.1.sh
+CORRECTLINE=bam.correctLineLength.sh #NA
+ASSSTATS=~tdo/Bin/assstats.sh #NA
+ICORN2SERIAL=/nfs/users/nfs_t/tdo/Bin/icorn2.serial.sh #NA
+ANNOT1=~/Bin/vargene.AnnotationVARgenes.assembly.V0.1.sh #NA
 ANNOT2=~tdo/Bin/vargene.AnnotationVARgenes.assembly.V0.2.cov.sh
 
 #Python
-BSUB=bsub.py
+BSUB=bsub.py #NA
 
 #Perl
-HELPERPUTLENGTH=/nfs/users/nfs_t/tdo/Bin/helper.putlengthfasta2Blastm8.pl
-OVERLAPCHECKER=~/Bin/lav.decontamination_overlapChecker.pl
-CONTIGDELETER=/nfs/users/nfs_t/tdo/Bin/Assembly.deleteContigs.pl
-DELETEBLASTENTRY=~tdo/Bin/pacbio.deleteEntryinBlast.pl
-JOINCONTIGS=/nfs/users/nfs_t/tdo/Bin/gapclosing.joinContigs.pl
-COLLECTRESULTS=~tdo/Bin/icorn2.collectResults.pl
+HELPERPUTLENGTH=/nfs/users/nfs_t/tdo/Bin/helper.putlengthfasta2Blastm8.pl #NA
+OVERLAPCHECKER=~/Bin/lav.decontamination_overlapChecker.pl #NA
+CONTIGDELETER=/nfs/users/nfs_t/tdo/Bin/Assembly.deleteContigs.pl #NA
+DELETEBLASTENTRY=~tdo/Bin/pacbio.deleteEntryinBlast.pl #NA
+JOINCONTIGS=/nfs/users/nfs_t/tdo/Bin/gapclosing.joinContigs.pl #NA
+COLLECTRESULTS=~tdo/Bin/icorn2.collectResults.pl #NA
 
 #Others
-PAGIT=/nfs/pathogen003/tdo/Tools/PAGIT/64bit/PAGIT/sourceme.pagit
-LITTLESMALT=~tdo/Bin/little.smalt.bam.sh
-OVERLAPFINDER=~tdo/Bin/findoverlaps_ver3.pl
+PAGIT=/nfs/pathogen003/tdo/Tools/PAGIT/64bit/PAGIT/sourceme.pagit #NA
+LITTLESMALT=~tdo/Bin/little.smalt.bam.sh #NA
+OVERLAPFINDER=~tdo/Bin/findoverlaps_ver3.pl #NA
 IMAGE=$PAGIT_HOME/IMAGE/image.pl
-SSPACE=~tdo/bin/SSPACE-BASIC-2.0_linux-x86_64/SSPACE_Basic_v2.0.pl
-REAPER=~tdo/Bin/assemblypipeline.doreapr.sh
+SSPACE=~tdo/bin/SSPACE-BASIC-2.0_linux-x86_64/SSPACE_Basic_v2.0.pl #NA
+REAPER=~tdo/Bin/assemblypipeline.doreapr.sh #NA
 
 
 ################################################################

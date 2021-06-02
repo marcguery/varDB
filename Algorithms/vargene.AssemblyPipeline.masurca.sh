@@ -12,34 +12,34 @@ if [ -z "$n" ] ; then
   n=5;
 fi
 
-bam=$( head -n $n $MASTERLIST | tail -n 1 | awk '{ print $1}');
-name=$( head -n $n $MASTERLIST | tail -n 1 |  awk '{ print $2}');
-
 ################################################################
 
 
 ################################CONFIG################################
 
 ##Data files
-MASTERLIST=MasterList.txt
-LITTLEPF3D7=/nfs/pathogen003/tdo/Pfalciparum/3D7/Reference/Feb2015/little.Pf3D7.Feb2015.txt
-LITTLEPF3D7V4=/nfs/pathdata2/Plasmodium/falciparum/3D7/Reference/Little.Pf3D7V4.txt
+MASTERLIST=MasterList.txt #NA
+LITTLEPF3D7=/nfs/pathogen003/tdo/Pfalciparum/3D7/Reference/Feb2015/little.Pf3D7.Feb2015.txt #NA
+LITTLEPF3D7V4=/nfs/pathdata2/Plasmodium/falciparum/3D7/Reference/Little.Pf3D7V4.txt #NA
 BAMFOLDER=/nfs/team112_data00/pf.bwa/bam/
-VARCONFIG=/lustre/scratch118/infgen/team133/tdo/Pfalciparum/VAR/Assembly.Version3/config.txt
+VARCONFIG=/lustre/scratch118/infgen/team133/tdo/Pfalciparum/VAR/Assembly.Version3/config.txt #NA
 CAFOLDER=CA/
 GAPCLOSEFOLDER=10-gapclose/
 SCFFASTA=genome.scf.fasta
+
+bam=$( head -n $n $MASTERLIST | tail -n 1 | awk '{ print $1}');
+name=$( head -n $n $MASTERLIST | tail -n 1 |  awk '{ print $2}');
 
 
 ##Tools
 #sh
 ANNOTVARGENES=~/Bin/vargene.AnnotationVARgenes.assembly.V0.1.sh
 MASPOSTIMP=~/Bin/vargene.AssemblyPipeline.masurca.PostImprovement.NoReadextraction.sh
-ASSSTATS=~tdo/Bin/assstats.sh
+ASSSTATS=~tdo/Bin/assstats.sh #NA
 #Perl
 MERGEOSAM=~/Bin/vargene.mergeOverlappingSamtoolsRegions.pl
-SAMTOFASTQ=~/Bin/sam2fastq.2files.pl
-JOINSOLEX=~tdo/Bin/join.solexaBack.actual.sga.pl
+SAMTOFASTQ=~/Bin/sam2fastq.2files.pl #NA
+JOINSOLEX=~tdo/Bin/join.solexaBack.actual.sga.pl #NA
 
 #Common
 SAMTOOLS1_2=samtools1.2
@@ -50,10 +50,10 @@ MASURCA=/nfs/pathogen003/tdo/bin/MaSuRCA-2.3.2/bin/masurca
 VELVETH=~/bin/velveth
 
 #Others
-BSUB=bsub
-VELVETHTDO=~tdo/bin/velveth.tdo
-VELVETG=~/bin/velvetg
-VELVETGTDO=~tdo/bin/velvetg.tdo
+BSUB=bsub #NA
+VELVETHTDO=~tdo/bin/velveth.tdo #NA
+VELVETG=~/bin/velvetg #NA
+VELVETGTDO=~tdo/bin/velvetg.tdo #NA
 
 ################################################################
 
@@ -242,7 +242,7 @@ cd ..
 $BSUB -R "select[type==X86_64 && mem > 9000] rusage[mem=9000,tmp=4000]" -M9000 \
 	-o Output/out.Improvement.$name.o -e Output/out.Improvement.$name.e -n 4 \
 	-R "span[hosts=1]" \
-	bash $MASPOSTIMP  $name
+	bash $MASPOSTIMP $name
 
 ###now improve the assembly by default
 ### do de novo assembly using predifined k-mer of 71

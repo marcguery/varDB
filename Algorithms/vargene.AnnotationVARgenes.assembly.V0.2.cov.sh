@@ -30,31 +30,31 @@ VARSEQ=/nfs/pathdata2/Plasmodium/falciparum/3D7/Reference/PfV2.internalVAR.fasta
 #Commons
 AUGUSTUS=augustus
 SAMTOOLS=samtools
-
-#sh
-ANNOTATEAUGUSTUS=~/Bin/annotation.wrapperAnnotateAugustus.sh
-LITTLEEMBL=~tdo/Bin/little.allEMBL2xx.sh
-LITTLESMALT=~/Bin/little.smalt.bam.sh
 FORMATDB=formatdb
 BLASTALL=blastall
+JAVA=/software/java/bin/java
+
+#sh
+ANNOTATEAUGUSTUS=~/Bin/annotation.wrapperAnnotateAugustus.sh #NA
+LITTLEEMBL=~tdo/Bin/little.allEMBL2xx.sh #NA
+LITTLESMALT=~/Bin/little.smalt.bam.sh #NA
 #Python
 
 #Perl
-GETANNOTFASTA=getAnnoFasta.pl
-SEPSEQ=SeperateSequences.pl
-MAINRATT=~/Bin/ratt/main.ratt.pl
-PSUUNION=psu_union.pl
-EMBLMOREDESC=/nfs/users/nfs_t/tdo/Bin/EMBL2aa_moreDescription.pl
-EMBLCDSREICH=/nfs/users/nfs_t/tdo/Bin/EMBL2CDS.Reichenowi.previousID.pl
-FASTAEXTRACTOR=fasta_extractor.pl
-FASTA2SINGLELINE=fasta2singleLine.pl
-DSIDCYS=~/Bin/DSID_cys.pl
-COUNTCONTIGSIZE=/nfs/users/nfs_t/tdo/Bin//Countcountigsize.pl
+GETANNOTFASTA=getAnnoFasta.pl #NA
+SEPSEQ=SeperateSequences.pl #NA
+MAINRATT=~/Bin/ratt/main.ratt.pl #NA
+PSUUNION=psu_union.pl #NA
+EMBLMOREDESC=/nfs/users/nfs_t/tdo/Bin/EMBL2aa_moreDescription.pl #NA
+EMBLCDSREICH=/nfs/users/nfs_t/tdo/Bin/EMBL2CDS.Reichenowi.previousID.pl #NA
+FASTAEXTRACTOR=fasta_extractor.pl #NA
+FASTA2SINGLELINE=fasta2singleLine.pl #NA
+DSIDCYS=~/Bin/DSID_cys.pl #NA
+COUNTCONTIGSIZE=/nfs/users/nfs_t/tdo/Bin//Countcountigsize.pl #NA
 RAWREADNORM=~tdo/Bin/vargene.rawReadCountNormalization.pl
-FASTA2GTF=~/Bin/fasta2gtf.pl
+FASTA2GTF=~/Bin/fasta2gtf.pl #NA
 
 #Others
-JAVA=/software/java/bin/java
 MARKDUPL=$ICORN2_HOME/MarkDuplicates.jar
 
 ################################################################
